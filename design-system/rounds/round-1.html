@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coolchy Design Review — Round 1 (100 Concepts)</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#ffffff; --ink:#1f1d1a; --muted:#6b6660; --border:#e7e1d8;
+    --like:#3a7d54; --pass:#b5532c; --later:#c9a227;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+  header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border);padding:16px 24px;}
+  h1{margin:0 0 4px;font-size:20px;}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:12px;}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  select,input[type=text]{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:#fff;}
+  .stat{font-size:13px;color:var(--muted);}
+  button.primary{background:var(--ink);color:#fff;border:none;border-radius:6px;padding:8px 14px;font-size:13px;cursor:pointer;}
+  button.primary:hover{opacity:.85;}
+  button.ghost{background:transparent;border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-size:13px;cursor:pointer;}
+  main{max-width:1280px;margin:0 auto;padding:20px 24px 80px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px;transition:box-shadow .15s;}
+  .card.decided-like{border-color:var(--like);box-shadow:0 0 0 2px rgba(58,125,84,.15);}
+  .card.decided-pass{opacity:.55;}
+  .card.decided-later{border-color:var(--later);box-shadow:0 0 0 2px rgba(201,162,39,.15);}
+  .palette{display:flex;height:34px;border-radius:6px;overflow:hidden;border:1px solid var(--border);}
+  .swatch{flex:1;}
+  .idnum{font-size:11px;color:var(--muted);font-weight:600;}
+  .cat{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .title{font-size:15px;font-weight:700;margin:0;}
+  .desc{font-size:12.5px;color:#444;line-height:1.4;flex-grow:1;}
+  .product{font-size:11px;color:var(--muted);font-style:italic;}
+  .decision-row{display:flex;gap:6px;}
+  .decision-row button{flex:1;border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 0;font-size:12px;cursor:pointer;font-weight:600;}
+  .decision-row button.like.active{background:var(--like);color:#fff;border-color:var(--like);}
+  .decision-row button.pass.active{background:var(--pass);color:#fff;border-color:var(--pass);}
+  .decision-row button.later.active{background:var(--later);color:#fff;border-color:var(--later);}
+  textarea{width:100%;min-height:44px;font-size:12px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;resize:vertical;font-family:inherit;}
+  .hidden{display:none !important;}
+  footer{position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:#fff;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;font-size:13px;}
+  footer button{background:#fff;color:var(--ink);border:none;border-radius:6px;padding:8px 16px;font-size:13px;cursor:pointer;font-weight:600;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Coolchy Design Review — Round 1</h1>
+  <div class="sub">100 design concepts. Mark each Like / Pass / Later and add notes if you want. Your choices auto-save in this browser. Click "Export Feedback" when done and send the downloaded JSON file back.</div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search title or description...">
+    <select id="categoryFilter"><option value="">All categories</option></select>
+    <select id="statusFilter">
+      <option value="">All statuses</option>
+      <option value="undecided">Undecided</option>
+      <option value="like">Liked</option>
+      <option value="pass">Passed</option>
+      <option value="later">Later</option>
+    </select>
+    <button class="ghost" id="resetBtn">Reset all decisions</button>
+  </div>
+</header>
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+<footer>
+  <span class="stat" id="progress">0 / 100 reviewed</span>
+  <button id="exportBtn">Export Feedback (.json)</button>
+</footer>
+
+<script>
+const ROUND_KEY = "coolchy-round-1";
+const DATA = [{"id": 1, "category": "Circus & Vintage Whimsy", "title": "Big Top Stripe Stack", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Vintage circus stripes (red/cream) behind hand-lettered word “MAGIC” in a retro circus script, mustard star confetti scattered around.", "product": "Tee / Tote"}, {"id": 2, "category": "Circus & Vintage Whimsy", "title": "Vintage Carousel Cat", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Line-art carousel horse swapped for a grinning cat mid-gallop, circus banner below reading “RIDE OR DIE.”", "product": "Tee"}, {"id": 3, "category": "Circus & Vintage Whimsy", "title": "Striped Popcorn Box Pun", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Retro striped popcorn box illustration with hand-lettered banner “Sending Good Vibes, One Kernel at a Time.”", "product": "Sticker / Mug"}, {"id": 4, "category": "Circus & Vintage Whimsy", "title": "Tarot of the Ringmaster", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Ringmaster top hat & cane inside an ornate tarot-card frame, circus serif title “THE RINGMASTER.”", "product": "Poster / Tee"}, {"id": 5, "category": "Circus & Vintage Whimsy", "title": "Tent Peek Black Cat", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Black cat silhouette peeking out from behind a striped circus tent flap, crescent moon overhead.", "product": "Sticker"}, {"id": 6, "category": "Circus & Vintage Whimsy", "title": "Star of the Show (Custom Name)", "palette": ["#F5E6CA", "#C8553D", "#1B3358", "#E3B23C"], "description": "Bunting banner with a customizable name in circus script, mustard stars, “STAR OF THE SHOW” caption.", "product": "Personalized Tee / Mug"}, {"id": 7, "category": "Dark Moody & Celestial", "title": "Black Cat & Crescent Moon", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Minimal single-line black cat silhouette curled beneath a crescent moon on a deep plum background.", "product": "Tee"}, {"id": 8, "category": "Dark Moody & Celestial", "title": "Tarot Card: The Caffeinated", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Custom tarot card design featuring a coffee cup, stars, and roman numeral ‘0 — THE CAFFEINATED.’", "product": "Mug / Tee"}, {"id": 9, "category": "Dark Moody & Celestial", "title": "Bloom Where You're Buried", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Fine-line skeleton hand cradling wildflowers, paired with the phrase “Bloom Where You're Buried.”", "product": "Tee"}, {"id": 10, "category": "Dark Moody & Celestial", "title": "Gothic Floral Monogram", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Dark florals and thorned vines wreathing a single custom monogram letter on deep teal.", "product": "Personalized Tee / Tote"}, {"id": 11, "category": "Dark Moody & Celestial", "title": "Brew. Curse. Repeat.", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Hand-drawn cauldron with smoke curling into the stacked words “BREW. CURSE. REPEAT.”", "product": "Sticker / Tee"}, {"id": 12, "category": "Dark Moody & Celestial", "title": "Celestial Moth", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Fine single continuous line luna moth with star-dusted wings, gold linework on black.", "product": "Poster / Tee"}, {"id": 13, "category": "Dark Moody & Celestial", "title": "Strength Tarot Spark", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Small flame icon beside a minimalist ‘Strength’ tarot-card motif in a moody palette.", "product": "Sticker"}, {"id": 14, "category": "Dark Moody & Celestial", "title": "Plotting, Not Lost", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Elegant script reading “Not All Who Wander Are Lost, Some Are Just Plotting” with a thorned rose corner flourish.", "product": "Tee"}, {"id": 15, "category": "Dark Moody & Celestial", "title": "Spirits Said You're My Person", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Ouija planchette reshaped subtly into a heart, paired with “Spirits Said You're My Person” — witchy Valentine's crossover.", "product": "Tee / Card"}, {"id": 16, "category": "Dark Moody & Celestial", "title": "Moonphase Cat Stretch", "palette": ["#15110F", "#4A2545", "#1F3B3A", "#C9A227"], "description": "Sequence of moon phases, each silhouette containing a cat mid-stretch, on deep navy.", "product": "Poster / Tee"}, {"id": 17, "category": "70s–90s Retro & Groovy", "title": "Good Vibes Sunburst", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Wavy bubble-font “Good Vibes Only” nested inside a retro sunburst, burnt-orange and avocado palette.", "product": "Tee"}, {"id": 18, "category": "70s–90s Retro & Groovy", "title": "Retro Mushroom Trio", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Three oversized 70s-style mushrooms in mustard and avocado tones with daisy accents.", "product": "Tote / Tee"}, {"id": 19, "category": "70s–90s Retro & Groovy", "title": "Wavy Checkerboard Heart", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "A distorted checkerboard pattern bent into a heart shape — Y2K-meets-70s crossover.", "product": "Sticker"}, {"id": 20, "category": "70s–90s Retro & Groovy", "title": "Melting Acid Smiley", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "90s grunge melting smiley face with halftone drip shading.", "product": "Tee"}, {"id": 21, "category": "70s–90s Retro & Groovy", "title": "Main Character Energy", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Bold manga-style speed lines framing the phrase “MAIN CHARACTER ENERGY.”", "product": "Tee"}, {"id": 22, "category": "70s–90s Retro & Groovy", "title": "Earth-Tone Wave Bands", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Repeating horizontal wavy color bands in rust, avocado, and cream — an all-over pattern, no text.", "product": "All-Over Print"}, {"id": 23, "category": "70s–90s Retro & Groovy", "title": "Groovy Van & Mountains", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Minimalist line-art VW-style van in front of a sun and mountain range, groovy palette.", "product": "Sticker / Tee"}, {"id": 24, "category": "70s–90s Retro & Groovy", "title": "Peace, Love & Iced Coffee", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Daisies and groovy swirls bordering the hand-lettered phrase “Peace, Love & Iced Coffee.”", "product": "Mug / Tee"}, {"id": 25, "category": "70s–90s Retro & Groovy", "title": "Neon Grid Sunset", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "80s neon grid horizon with sun and palm silhouette — synthwave-meets-90s nostalgia.", "product": "Poster"}, {"id": 26, "category": "70s–90s Retro & Groovy", "title": "Bubble Letter BESTIE", "palette": ["#D9763D", "#6B8E4E", "#E8B84B", "#F3E3C3"], "description": "Chunky retro bubble-letter “BESTIE” with scattered clipart stars, Y2K bestie-gift energy.", "product": "Tee / Sticker"}, {"id": 27, "category": "Y2K Nostalgia", "title": "Chrome Iconic Butterfly Clip", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Chrome bubble text “ICONIC” flanked by butterfly hair-clip graphics, cyber-pink palette.", "product": "Tee"}, {"id": 28, "category": "Y2K Nostalgia", "title": "2000s Kid Forever Icon Grid", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Grid of pixel-art Y2K icons — flip phone, CD, gel pen — captioned “2000s Kid Forever.”", "product": "Tee / Sticker"}, {"id": 29, "category": "Y2K Nostalgia", "title": "Holographic Star Scatter", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Scattered chrome stars and hearts in a sticker-sheet pattern.", "product": "Sticker Set"}, {"id": 30, "category": "Y2K Nostalgia", "title": "Lowercase Cursive 'baby'", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Single lowercase bubble-outlined cursive word “baby” — Y2K logo-tee homage.", "product": "Tee"}, {"id": 31, "category": "Y2K Nostalgia", "title": "Pixel Glitch Heart", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Glitch-effect pixel heart with scan lines, cyber-blue and hot-pink palette.", "product": "Sticker / Tee"}, {"id": 32, "category": "Y2K Nostalgia", "title": "My Era Mixtape Cover", "palette": ["#FF5FA2", "#4FD2FF", "#C6FF4F", "#C9C9C9"], "description": "Fake mixtape cover parody titled “MY ERA” with joke track-list titles.", "product": "Tee / Poster"}, {"id": 33, "category": "Hand-Drawn Affirmations", "title": "Breathe, It's Just a Tuesday", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Wobbly hand-lettered word stack: “Breathe / It's Just A / Tuesday” in sage and cream.", "product": "Tee / Mug"}, {"id": 34, "category": "Hand-Drawn Affirmations", "title": "Bloom Anyway Daisy Ring", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Circular ring of doodled daisies surrounding the words “Bloom Anyway.”", "product": "Sticker"}, {"id": 35, "category": "Hand-Drawn Affirmations", "title": "Bride Tribe Custom Banner", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Cursive “Bride Tribe” banner with hand-drawn florals, names personalizable.", "product": "Tee"}, {"id": 36, "category": "Hand-Drawn Affirmations", "title": "Vow Excerpt Floral Arch", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "A hand-lettered wedding-vow excerpt framed inside a soft floral arch.", "product": "Print / Card"}, {"id": 37, "category": "Hand-Drawn Affirmations", "title": "Wildflower Verse Frame", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "A scripture verse in organic script framed by pressed-flower style illustration.", "product": "Print / Tee"}, {"id": 38, "category": "Hand-Drawn Affirmations", "title": "Messy Hair, Good Heart", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Rough scribbled heart outline paired with “Messy Hair, Good Heart.”", "product": "Tee"}, {"id": 39, "category": "Hand-Drawn Affirmations", "title": "Coffee / Chaos / Repeat", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Three stacked hand-lettered words, each in a different playful font.", "product": "Mug"}, {"id": 40, "category": "Hand-Drawn Affirmations", "title": "Soft Life, Hard Boundaries", "palette": ["#F3C9C0", "#9CAF88", "#FBF6EF", "#C97B5A"], "description": "Flowing ribbon banner reading “Soft Life, Hard Boundaries” with tiny floral sprigs.", "product": "Tee / Tote"}, {"id": 41, "category": "Pet & Animal Humor", "title": "Dog Mom Paw Heart Stamp", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Paw print arranged into a heart shape with a stamped “Dog Mom” text overlay.", "product": "Tee / Mug"}, {"id": 42, "category": "Pet & Animal Humor", "title": "Cat Tax Invoice", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Line-art cat lounging atop a faux invoice labeled “CAT TAX — PAY IN PETS.”", "product": "Sticker / Tee"}, {"id": 43, "category": "Pet & Animal Humor", "title": "Golden Retriever Smile Portrait", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Warm line-art golden retriever face mid-smile, breed customizable.", "product": "Tee / Tote"}, {"id": 44, "category": "Pet & Animal Humor", "title": "Sorry I'm Late, My Dog Needed Me", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Bold statement text with a tiny paw-print icon accent.", "product": "Tee"}, {"id": 45, "category": "Pet & Animal Humor", "title": "Cat Loaf Icon", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Single continuous-line icon of a cat in ‘loaf’ pose, designed for a repeatable sticker pack.", "product": "Sticker"}, {"id": 46, "category": "Pet & Animal Humor", "title": "Custom Pet Line Portrait", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Upload-your-pet continuous single-line portrait style, fully personalizable.", "product": "Tee / Print"}, {"id": 47, "category": "Pet & Animal Humor", "title": "Crazy Cat Lady Club Badge", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Retro varsity badge design with a cat silhouette and surrounding stars.", "product": "Tee"}, {"id": 48, "category": "Pet & Animal Humor", "title": "Powered by Hay and Chaos", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Cute guinea pig doodle paired with “Powered by Hay and Chaos” for the small-pet niche.", "product": "Sticker / Tee"}, {"id": 49, "category": "Pet & Animal Humor", "title": "Horse Girl Forever Patch", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Varsity-patch-style horse head with the text “Horse Girl Forever.”", "product": "Tee"}, {"id": 50, "category": "Pet & Animal Humor", "title": "Ask Me About My Gecko", "palette": ["#E3B23C", "#355E3B", "#F5E6CA", "#B5532C"], "description": "Friendly gecko illustration with “Ask Me About My Gecko” — niche reptile-owner identity humor.", "product": "Tee / Sticker"}, {"id": 51, "category": "Profession & Hobby Identity", "title": "Teacher Mode: Activated", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Apple icon rendered with circuit-board lines forming a badge shape.", "product": "Mug / Tee"}, {"id": 52, "category": "Profession & Hobby Identity", "title": "Caffeine & Compassion", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Caduceus symbol merged into a heart shape with the text “Caffeine & Compassion.”", "product": "Tee"}, {"id": 53, "category": "Profession & Hobby Identity", "title": "Plant Lady Jungle Border", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "“Plant Lady” text wreathed in monstera leaves, sage palette.", "product": "Tote / Tee"}, {"id": 54, "category": "Profession & Hobby Identity", "title": "Loading Patience...", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Pixel-art game controller icon with the caption “Loading Patience...”", "product": "Tee"}, {"id": 55, "category": "Profession & Hobby Identity", "title": "Bowfishing Sunset Silhouette", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Silhouette angler with a bow on a boat at sunset — outdoor micro-niche.", "product": "Tee"}, {"id": 56, "category": "Profession & Hobby Identity", "title": "Knit Happens", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Tangled ball of yarn illustrated into a heart shape with the pun “Knit Happens.”", "product": "Tee / Tote"}, {"id": 57, "category": "Profession & Hobby Identity", "title": "It's Not OCD, It's Excel", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Spreadsheet-grid background pattern with the joke text “It's Not OCD, It's Excel.”", "product": "Mug"}, {"id": 58, "category": "Profession & Hobby Identity", "title": "Bookworm Era", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Minimal line-art stack of books with a tiny worm peeking out, captioned “Bookworm Era.”", "product": "Tote / Tee"}, {"id": 59, "category": "Profession & Hobby Identity", "title": "Glamping Club Travel Badge", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Retro travel-trailer badge logo reading “Glamping Club” in an outdoor palette.", "product": "Tee / Sticker"}, {"id": 60, "category": "Profession & Hobby Identity", "title": "sudo make me coffee", "palette": ["#25324B", "#E3B23C", "#F4F1EA", "#B5532C"], "description": "Mock terminal window with the joke command “sudo make me coffee.”", "product": "Mug / Tee"}, {"id": 61, "category": "Family & Personalized", "title": "Family Name Established Tee", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Varsity-style “[Family Name] Est. [Year]” lockup with a simple house icon.", "product": "Tee / Sweatshirt"}, {"id": 62, "category": "Family & Personalized", "title": "Sibling Rank Badge Set", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Matching “Big Sister / Little Brother” badge set with coordinated icon styles.", "product": "Tee Set"}, {"id": 63, "category": "Family & Personalized", "title": "Grandma's Garden Names", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Floral wreath listing custom grandkid names under “Grandma's Garden.”", "product": "Tee / Tote"}, {"id": 64, "category": "Family & Personalized", "title": "Coordinate Heart Map", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Custom heart-shaped map pin marking the coordinates of a meaningful place.", "product": "Print / Tee"}, {"id": 65, "category": "Family & Personalized", "title": "Birth Stat Announcement Print", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Soft floral frame holding custom baby stats — name, date, weight.", "product": "Nursery Print"}, {"id": 66, "category": "Family & Personalized", "title": "Zodiac Family Constellation", "palette": ["#D9A6A1", "#9CAF88", "#FBF6EF", "#3A3A3A"], "description": "Custom family names plotted as constellation points matching each person's zodiac sign.", "product": "Print / Tee"}, {"id": 67, "category": "Outdoor & Niche Activities", "title": "Backpacking Trail Badge", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Minimalist mountain-range badge logo with a customizable trail name.", "product": "Tee / Sticker"}, {"id": 68, "category": "Outdoor & Niche Activities", "title": "Spearfishing Retro Patch", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Vintage patch-style design pairing a fish silhouette with a spear, ocean palette.", "product": "Tee"}, {"id": 69, "category": "Outdoor & Niche Activities", "title": "Camping Checklist Humor", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Hand-written checklist parody: “1. Coffee 2. Campfire 3. Avoid People.”", "product": "Tee"}, {"id": 70, "category": "Outdoor & Niche Activities", "title": "Fly Fishing River Bend", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Single continuous-line illustration of a river bend with a fly-fisher silhouette.", "product": "Tee / Print"}, {"id": 71, "category": "Outdoor & Niche Activities", "title": "National Park Vintage Poster", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "WPA-style travel poster design with a customizable park name, earthy palette.", "product": "Poster / Tee"}, {"id": 72, "category": "Outdoor & Niche Activities", "title": "Slow Pace, Big Heart", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Running-shoe icon paired with the encouraging phrase “Slow Pace, Big Heart.”", "product": "Tee"}, {"id": 73, "category": "Outdoor & Niche Activities", "title": "Field Notes Birdwatcher", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Illustrated bird with a hand-lettered ‘Field Notes’ journal-style caption.", "product": "Tote / Tee"}, {"id": 74, "category": "Outdoor & Niche Activities", "title": "Home Is Wherever We Park It", "palette": ["#2F4538", "#B5532C", "#A8A296", "#EFE8D8"], "description": "Simple line-art camper van badge with mountain backdrop and custom tagline.", "product": "Sticker / Tee"}, {"id": 75, "category": "Minimalist Line Art", "title": "Continuous-Line Mountain Range", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "One unbroken line forming a mountain skyline, Patina-blue accent stroke.", "product": "Tee / Print"}, {"id": 76, "category": "Minimalist Line Art", "title": "Geometric Sun Face", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "Simple geometric sun-face icon in a warm neutral line-art style.", "product": "Sticker / Tee"}, {"id": 77, "category": "Minimalist Line Art", "title": "Abstract Line Body Form", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "Fine-line abstract figure study in soft sage and blush tones.", "product": "Print"}, {"id": 78, "category": "Minimalist Line Art", "title": "Continuous-Line Cat", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "One unbroken line forming a sitting cat, black ink on cream.", "product": "Sticker / Tee"}, {"id": 79, "category": "Minimalist Line Art", "title": "Heart Line Grid", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "Repeating minimal heart-outline icons arranged in a 3x3 grid.", "product": "Sticker Sheet"}, {"id": 80, "category": "Minimalist Line Art", "title": "Botanical Single-Stem Sketch", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "One delicate flower stem drawn in a single continuous line, Patina-blue ink look.", "product": "Print / Tote"}, {"id": 81, "category": "Minimalist Line Art", "title": "Minimal Wave & Moon Horizon", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "Simple horizon line with a wave curve and small moon, calming neutral palette.", "product": "Print / Tee"}, {"id": 82, "category": "Minimalist Line Art", "title": "Abstract Profile Line Art", "palette": ["#111111", "#FFFFFF", "#7C9A92", "#E5E1D8"], "description": "Single-line side-profile face study, modern gallery-wall aesthetic.", "product": "Print"}, {"id": 83, "category": "Kawaii & Pastel Cute", "title": "Kawaii Boba Tea Character", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Smiling boba-cup character with blush cheeks in a soft pastel palette.", "product": "Sticker / Tee"}, {"id": 84, "category": "Kawaii & Pastel Cute", "title": "Cloud & Rainbow Sticker Motif", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Fluffy cloud paired with a mini rainbow and scattered stars.", "product": "Sticker Pack"}, {"id": 85, "category": "Kawaii & Pastel Cute", "title": "Chibi Cat Barista", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Small chibi-style cat in a barista apron, captioned “Purr-fect Latte.”", "product": "Mug / Sticker"}, {"id": 86, "category": "Kawaii & Pastel Cute", "title": "Mushroom Friends Trio", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Three smiling pastel mushrooms holding hands — friendship-gift theme.", "product": "Tee / Sticker"}, {"id": 87, "category": "Kawaii & Pastel Cute", "title": "Strawberry Milk Carton Character", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Cute milk-carton character with rosy cheeks in soft pink and cream tones.", "product": "Sticker / Tee"}, {"id": 88, "category": "Kawaii & Pastel Cute", "title": "Ghost Best Friends", "palette": ["#FADADD", "#C9F2E4", "#E3D7F4", "#FFF7F0"], "description": "Pastel friendly-ghost characters captioned “Boo-tiful Friendship” — cute Halloween crossover.", "product": "Sticker / Tee"}, {"id": 89, "category": "Boho & Cottagecore Nature", "title": "Pressed Wildflower Bundle", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Botanical bundle tied with twine, terracotta and sage palette.", "product": "Print / Tote"}, {"id": 90, "category": "Boho & Cottagecore Nature", "title": "Mushroom & Fern Forest Scene", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Soft illustrated forest-floor scene with mushrooms, ferns, and a Patina-blue mist accent.", "product": "Print / Tee"}, {"id": 91, "category": "Boho & Cottagecore Nature", "title": "Moon Phase Botanical Wreath", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Moon phases interwoven with a wildflower wreath — boho-wedding adjacent.", "product": "Print / Tee"}, {"id": 92, "category": "Boho & Cottagecore Nature", "title": "Slow Mornings Still Life", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Illustrated cozy breakfast still-life captioned “Slow Mornings.”", "product": "Print / Mug"}, {"id": 93, "category": "Boho & Cottagecore Nature", "title": "Sun & Feather Mandala", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Sun motif radiating outward into a feather-and-mandala pattern, earthy palette.", "product": "Tote / Tee"}, {"id": 94, "category": "Boho & Cottagecore Nature", "title": "Bee Kind Cottage Garden", "palette": ["#C97B5A", "#9CAF88", "#F2E9DC", "#7C9A92"], "description": "Bee-and-honeycomb illustration nestled in wildflowers with the pun “Bee Kind.”", "product": "Sticker / Tee"}, {"id": 95, "category": "Holiday & Seasonal", "title": "Cozy Season Plaid Heart", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Plaid pattern shaped into a heart with hand-lettered “Cozy Season,” cranberry and pine palette.", "product": "Tee / Mug"}, {"id": 96, "category": "Holiday & Seasonal", "title": "The Trickster Tarot Cat", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Halloween tarot-style card featuring a black cat and pumpkin motif captioned “THE TRICKSTER.”", "product": "Tee / Sticker"}, {"id": 97, "category": "Holiday & Seasonal", "title": "Hex Me Maybe", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Candy-conversation-heart shape carrying the witchy pun “Hex Me Maybe.”", "product": "Sticker / Card"}, {"id": 98, "category": "Holiday & Seasonal", "title": "New Year, New Crayons", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Varsity badge with a crayon icon captioned “New Year, New Crayons” — back-to-school theme.", "product": "Tee"}, {"id": 99, "category": "Holiday & Seasonal", "title": "Grateful / Blessed / Stuffed", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Hand-lettered stacked words in an autumn palette for Thanksgiving.", "product": "Tee / Mug"}, {"id": 100, "category": "Holiday & Seasonal", "title": "Groovy New Year Countdown", "palette": ["#2E5339", "#9E2B2B", "#F4ECD8", "#C9A227"], "description": "Retro groovy typography spelling out a customizable year with confetti accents.", "product": "Tee / Print"}];
+
+const STORAGE_KEY = "coolchy-feedback-" + ROUND_KEY;
+let state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+
+function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); updateProgress(); }
+
+function updateProgress(){
+  const decided = Object.values(state).filter(s => s.decision).length;
+  document.getElementById('progress').textContent = `${decided} / ${DATA.length} reviewed`;
+}
+
+function cardHTML(item){
+  const sw = item.palette.map(c => `<div class="swatch" style="background:${c}"></div>`).join('');
+  const s = state[item.id] || {};
+  return `
+  <div class="card" data-id="${item.id}" data-category="${item.category}">
+    <div class="palette">${sw}</div>
+    <div class="idnum">#${String(item.id).padStart(3,'0')}</div>
+    <div class="cat">${item.category}</div>
+    <h3 class="title">${item.title}</h3>
+    <div class="desc">${item.description}</div>
+    <div class="product">Suggested: ${item.product}</div>
+    <div class="decision-row">
+      <button class="like ${s.decision==='like'?'active':''}" data-d="like">Like</button>
+      <button class="pass ${s.decision==='pass'?'active':''}" data-d="pass">Pass</button>
+      <button class="later ${s.decision==='later'?'active':''}" data-d="later">Later</button>
+    </div>
+    <textarea placeholder="Notes (optional)...">${s.notes || ''}</textarea>
+  </div>`;
+}
+
+const grid = document.getElementById('grid');
+grid.innerHTML = DATA.map(cardHTML).join('');
+
+// category filter options
+const cats = [...new Set(DATA.map(d => d.category))];
+const catSelect = document.getElementById('categoryFilter');
+cats.forEach(c => {
+  const o = document.createElement('option'); o.value = c; o.textContent = c; catSelect.appendChild(o);
+});
+
+function refreshCardClasses(){
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const d = (state[id] || {}).decision;
+    card.classList.remove('decided-like','decided-pass','decided-later');
+    if(d) card.classList.add('decided-' + d);
+  });
+}
+refreshCardClasses();
+updateProgress();
+
+grid.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-d]');
+  if(!btn) return;
+  const card = btn.closest('.card');
+  const id = card.dataset.id;
+  const decision = btn.dataset.d;
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  refreshCardClasses();
+  card.querySelectorAll('.decision-row button').forEach(b => b.classList.remove('active'));
+  if(state[id].decision) card.querySelector(`button[data-d="${state[id].decision}"]`).classList.add('active');
+});
+
+grid.addEventListener('input', (e) => {
+  if(e.target.tagName !== 'TEXTAREA') return;
+  const card = e.target.closest('.card');
+  const id = card.dataset.id;
+  state[id] = state[id] || {};
+  state[id].notes = e.target.value;
+  save();
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  if(!confirm('Clear all decisions and notes for this round?')) return;
+  state = {};
+  save();
+  grid.innerHTML = DATA.map(cardHTML).join('');
+  refreshCardClasses();
+});
+
+function applyFilters(){
+  const q = document.getElementById('search').value.toLowerCase();
+  const cat = catSelect.value;
+  const status = document.getElementById('statusFilter').value;
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const item = DATA.find(d => d.id == id);
+    const decision = (state[id] || {}).decision || '';
+    let show = true;
+    if(q && !(item.title.toLowerCase().includes(q) || item.description.toLowerCase().includes(q))) show = false;
+    if(cat && item.category !== cat) show = false;
+    if(status === 'undecided' && decision) show = false;
+    if(status && status !== 'undecided' && decision !== status) show = false;
+    card.classList.toggle('hidden', !show);
+  });
+}
+document.getElementById('search').addEventListener('input', applyFilters);
+catSelect.addEventListener('change', applyFilters);
+document.getElementById('statusFilter').addEventListener('change', applyFilters);
+
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const out = DATA.map(item => ({
+    id: item.id,
+    title: item.title,
+    category: item.category,
+    decision: (state[item.id] || {}).decision || null,
+    notes: (state[item.id] || {}).notes || ""
+  }));
+  const blob = new Blob([JSON.stringify({round: ROUND_KEY, feedback: out}, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = ROUND_KEY + '-feedback.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
