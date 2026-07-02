@@ -1,0 +1,705 @@
+{
+  "round": "coolchy-round-1",
+  "feedback": [
+    {
+      "id": 1,
+      "title": "Haft-Sin Collage Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "title": "Eid-e Nowruz Mobarak Banner Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": "Probbaly a good idea with kids themed style. Avoid using the word Mobarak and instead use Nowruz Pirooz. More Persian"
+    },
+    {
+      "id": 3,
+      "title": "Sabzeh Sprout Line Art Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "title": "Goldfish & Mirror Nowruz Icon Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "title": "Sizdah Bedar Picnic Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "title": "Khune Tekouni Spring Clean Tee",
+      "category": "Nowruz & Haft-Sin",
+      "decision": "like",
+      "notes": "Like the idea but make it more funny by saying something like \"This is my house shaking tshirt\" or something like that."
+    },
+    {
+      "id": 7,
+      "title": "Persian Cat Drinking Chai Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "title": "Chai Time, Every Time Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": "Good, but instead of Chai, say Chayee which is basically Persian black tea traditionally served in a tulip Estekan."
+    },
+    {
+      "id": 9,
+      "title": "Estekan & Nabat Still Life Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "title": "Samovar Sunset Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": "Good, but it shoud be morning. Tea is a morning drink for the most part."
+    },
+    {
+      "id": 11,
+      "title": "Too Much Chai Club Crest Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": "Use Chayee instead of Chai."
+    },
+    {
+      "id": 12,
+      "title": "Cat on a Persian Rug Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "title": "Befarmaeed Chai Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "pass",
+      "notes": "Missing a fun angle. "
+    },
+    {
+      "id": 14,
+      "title": "Saffron & Steam Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "pass",
+      "notes": "No one putts Saffrong in the tea directly."
+    },
+    {
+      "id": 15,
+      "title": "Chai Addict Society Badge Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": "Chayee and add 1899 after Est."
+    },
+    {
+      "id": 16,
+      "title": "Nabat Sugar Rock Doodle Tee",
+      "category": "Persian Cat & Chai Culture",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 17,
+      "title": "Joonam Bubble Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 18,
+      "title": "Azizam Heart Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "title": "Befarmaeed 47 Times Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "title": "Tarof Champion Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "title": "Ghorboonet Beram Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "title": "Chashm, Chashm, Chashm Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "title": "Vaaay Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "title": "Khaleh Code-Switch Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": "You gotta make it funny with how everything transalates to aunt and uncle in English"
+    },
+    {
+      "id": 25,
+      "title": "My Mom Speaks Farsi When She's Mad Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "title": "Merci, Khoda Hafez Tee",
+      "category": "Heritage Language & Code-Switch Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 27,
+      "title": "Nazar Embroidered Icon Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "title": "Cheshm Zakhm Protection Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 29,
+      "title": "Esfand Smoke Swirl Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 30,
+      "title": "Blue Eye Grid Pattern Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "title": "Nazar Necklace Line Art Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 32,
+      "title": "Cheshm Nakhori Crest Tee",
+      "category": "Evil Eye & Protective Symbols",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 33,
+      "title": "Golestan Tea Co. Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "pass",
+      "notes": "It's not a fictional brand. Golestan is actually a real tea brand. "
+    },
+    {
+      "id": 34,
+      "title": "Saffron Threads Vintage Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 35,
+      "title": "Rosewater & Sugar Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 36,
+      "title": "Pomegranate Molasses Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 37,
+      "title": "Sour Cherry (Albaloo) Crate Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 38,
+      "title": "Zereshk Spice Tin Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 39,
+      "title": "Sumac & Citrus Label Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 40,
+      "title": "Torsh-o-Shirin Candy Wrapper Tee",
+      "category": "Vintage Spice & Tea Label Aesthetic",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 41,
+      "title": "Persian Mom Hotline Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 42,
+      "title": "Eat Something, You're Skinny Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 43,
+      "title": "Tehrangeles Varsity Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 44,
+      "title": "Cousin Counted As Sibling Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 45,
+      "title": "Persian Parents Don't Knock Club Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 46,
+      "title": "I Survived Nowruz Cleaning Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 47,
+      "title": "Befarmaeed Olympics Gold Medalist Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 48,
+      "title": "Why Aren't You Married Yet Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 49,
+      "title": "Raised by a Persian Grandma Crest Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 50,
+      "title": "Doreh Hopping Champion Tee",
+      "category": "Diaspora Generational & Parent Humor",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 51,
+      "title": "Nastaliq Script Portrait Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 52,
+      "title": "Eshgh (Love) Calligraphy Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 53,
+      "title": "Azadi (Freedom) Script Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 54,
+      "title": "Omid (Hope) Brushstroke Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 55,
+      "title": "Simorgh Wordmark Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 56,
+      "title": "Persian Alphabet Sampler Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 57,
+      "title": "Bia Befarmaeed Script Banner Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 58,
+      "title": "Name-Day Custom Calligraphy Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 59,
+      "title": "Shahnameh Verse Excerpt Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 60,
+      "title": "Hafez Ghazal Line Art Tee",
+      "category": "Farsi Calligraphy & Typography Art",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 61,
+      "title": "Persepolis Est. 550 BC Varsity Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 62,
+      "title": "Cyrus Cylinder Line Art Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 63,
+      "title": "Persia, Cradle of Empires Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 64,
+      "title": "Achaemenid Pattern Border Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 65,
+      "title": "Persepolis Relief Line Art Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 66,
+      "title": "Lion & Sun Emblem Tee",
+      "category": "Persian Empire & History Pride",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 67,
+      "title": "Yalda Night Pomegranate Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 68,
+      "title": "Longest Night, Best Night Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 69,
+      "title": "Hafez Fortune-Telling Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 70,
+      "title": "Watermelon & Poetry Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 71,
+      "title": "Pomegranate Seeds Pattern Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 72,
+      "title": "Shab-e Yalda Crest Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 73,
+      "title": "Read Me a Ghazal Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 74,
+      "title": "Grandma's Yalda Spread Tee",
+      "category": "Yalda Night & Persian Poetry",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 75,
+      "title": "Kilim Border Pattern Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": "Like it but we can only print on front or back, no hem or sleeve prints."
+    },
+    {
+      "id": 76,
+      "title": "Persian Rug Medallion Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 77,
+      "title": "Boteh (Paisley) Repeat Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 78,
+      "title": "Tabriz Rug Detail Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 79,
+      "title": "Woven Pattern Crewneck",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 80,
+      "title": "Rug Medallion Embroidered Icon Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 81,
+      "title": "Geometric Kilim Color-Block Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 82,
+      "title": "Qashqai Pattern Line Art Tee",
+      "category": "Persian Rug & Pattern Motifs",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 83,
+      "title": "Anar (Pomegranate) Linocut Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 84,
+      "title": "Pomegranate Branch Botanical Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 85,
+      "title": "Split Pomegranate Still Life Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 86,
+      "title": "Saffron Crocus Botanical Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 87,
+      "title": "Persian Rosebud Line Art Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 88,
+      "title": "Cypress Tree Silhouette Tee",
+      "category": "Pomegranate & Botanical Symbolism",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 89,
+      "title": "Sofreh Aghd Custom Date Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 90,
+      "title": "Bride & Groom Esfand Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 91,
+      "title": "Mr. & Mrs. Persian Wedding Crest Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 92,
+      "title": "Khastegari Humor Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 93,
+      "title": "Aroosi Dance Floor Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 94,
+      "title": "Family Tree in Farsi Tee",
+      "category": "Persian Wedding & Family Milestones",
+      "decision": "pass",
+      "notes": ""
+    },
+    {
+      "id": 95,
+      "title": "Mehregan Harvest Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 96,
+      "title": "Chaharshanbe Suri Bonfire Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 97,
+      "title": "Tirgan Water Festival Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 98,
+      "title": "Sepandarmazgan Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 99,
+      "title": "Bonfire Jump Line Art Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    },
+    {
+      "id": 100,
+      "title": "Esfand Smoke Ritual Seasonal Tee",
+      "category": "Mehregan & Other Seasonal Holidays",
+      "decision": "like",
+      "notes": ""
+    }
+  ]
+}

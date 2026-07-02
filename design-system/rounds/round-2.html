@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coolchy Design Review — Round 2 (25 Refined Concepts)</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#ffffff; --ink:#1f1d1a; --muted:#6b6660; --border:#e7e1d8;
+    --like:#3a7d54; --pass:#b5532c; --later:#c9a227;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+  header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border);padding:16px 24px;}
+  h1{margin:0 0 4px;font-size:20px;}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:12px;}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  select,input[type=text]{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:#fff;}
+  .stat{font-size:13px;color:var(--muted);}
+  button.primary{background:var(--ink);color:#fff;border:none;border-radius:6px;padding:8px 14px;font-size:13px;cursor:pointer;}
+  button.primary:hover{opacity:.85;}
+  button.ghost{background:transparent;border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-size:13px;cursor:pointer;}
+  main{max-width:1280px;margin:0 auto;padding:20px 24px 80px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px;transition:box-shadow .15s;}
+  .card.decided-like{border-color:var(--like);box-shadow:0 0 0 2px rgba(58,125,84,.15);}
+  .card.decided-pass{opacity:.55;}
+  .card.decided-later{border-color:var(--later);box-shadow:0 0 0 2px rgba(201,162,39,.15);}
+  .palette{display:flex;height:34px;border-radius:6px;overflow:hidden;border:1px solid var(--border);}
+  .swatch{flex:1;}
+  .idnum{font-size:11px;color:var(--muted);font-weight:600;}
+  .cat{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .title{font-size:15px;font-weight:700;margin:0;}
+  .desc{font-size:12.5px;color:#444;line-height:1.4;flex-grow:1;}
+  .product{font-size:11px;color:var(--muted);font-style:italic;}
+  .decision-row{display:flex;gap:6px;}
+  .decision-row button{flex:1;border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 0;font-size:12px;cursor:pointer;font-weight:600;}
+  .decision-row button.like.active{background:var(--like);color:#fff;border-color:var(--like);}
+  .decision-row button.pass.active{background:var(--pass);color:#fff;border-color:var(--pass);}
+  .decision-row button.later.active{background:var(--later);color:#fff;border-color:var(--later);}
+  textarea{width:100%;min-height:44px;font-size:12px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;resize:vertical;font-family:inherit;}
+  .hidden{display:none !important;}
+  footer{position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:#fff;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;font-size:13px;}
+  footer button{background:#fff;color:var(--ink);border:none;border-radius:6px;padding:8px 16px;font-size:13px;cursor:pointer;font-weight:600;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Coolchy Design Review — Round 2</h1>
+  <div class="sub">25 refined concepts based on your Round 1 feedback — incorporating your notes on Chayee, Nowruz Pirooz, humor angles, and front/back print constraints. Mark each Like / Pass / Later and add notes. Your choices auto-save in this browser. Click "Export Feedback" when done and send the downloaded JSON file back.</div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search title or description...">
+    <select id="categoryFilter"><option value="">All categories</option></select>
+    <select id="statusFilter">
+      <option value="">All statuses</option>
+      <option value="undecided">Undecided</option>
+      <option value="like">Liked</option>
+      <option value="pass">Passed</option>
+      <option value="later">Later</option>
+    </select>
+    <button class="ghost" id="resetBtn">Reset all decisions</button>
+  </div>
+</header>
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+<footer>
+  <span class="stat" id="progress">0 / 25 reviewed</span>
+  <button id="exportBtn">Export Feedback (.json)</button>
+</footer>
+
+<script>
+const ROUND_KEY = "coolchy-round-2";
+const DATA = [{"id":1,"category":"Nowruz & Haft-Sin","title":"Nowruz Pirooz Kids Tee","palette":["#2A9D8F","#6B8E4E","#D4A017","#FBF6EF"],"description":"Kids-sized lettering 'Nowruz Pirooz' (the correct, more traditionally Persian phrase) in bouncy type surrounded by painted eggs, sabzeh sprouts, and tiny goldfish — birthday-party energy.","product":"Kids tee / Youth crewneck"},{"id":2,"category":"Nowruz & Haft-Sin","title":"This Is My Khune Tekouni Shirt","palette":["#2A9D8F","#6B8E4E","#D4A017","#FBF6EF"],"description":"Literal print of the joke: 'This Is My House-Shaking Shirt' in English and Farsi side by side, with a broom and a cloud of dust doodles — wearable declaration of the annual chaos.","product":"Comfort Colors tee"},{"id":3,"category":"Nowruz & Haft-Sin","title":"Haft-Sin Checklist Tee","palette":["#2A9D8F","#6B8E4E","#D4A017","#FBF6EF"],"description":"Hand-drawn checklist with tiny icons for each of the 7 Haft-Sin items (sabzeh ✓, sib ✓, serkeh ✓ …) styled like a retro to-do note, with 'All seven. We did it.' at the bottom.","product":"Tee / Tote"},{"id":4,"category":"Persian Cat & Chayee Culture","title":"Chayee Time, Every Time Tee","palette":["#8B5A2B","#F3E3C3","#7A1F2B","#D4A017"],"description":"Hand-lettered 'Chayee Time, Every Time' wrapped around a tulip-shaped estekan glass — the specific Persian black tea served in the curved glass, not generic 'chai.'","product":"Tee"},{"id":5,"category":"Persian Cat & Chayee Culture","title":"Samovar Morning Tee","palette":["#8B5A2B","#F3E3C3","#7A1F2B","#D4A017"],"description":"Retro morning-light illustration: samovar on a window ledge at sunrise, steam curling up, warm amber glow. Tea is a morning ritual — not sunset.","product":"Crewneck sweatshirt"},{"id":6,"category":"Persian Cat & Chayee Culture","title":"Too Much Chayee Club Est. 1899 Tee","palette":["#8B5A2B","#F3E3C3","#7A1F2B","#D4A017"],"description":"Circular crest badge: 'Too Much Chayee Club — Est. 1899' with a tulip estekan emblem at the center. 1899 anchors it to the era when samovars became ubiquitous in Persian households.","product":"Crewneck sweatshirt"},{"id":7,"category":"Heritage Language & Code-Switch Humor","title":"English Has One Word for All of This Tee","palette":["#2A9D8F","#C9483B","#2B2B2B","#FFFFFF"],"description":"Graphic: a web of Persian family-title words (khaleh, amu, daei, amme, daeizadeh, ammeh zadeh…) all pointing to a single English box that just says 'Aunt' or 'Uncle.' The joke is the collapse of nuance.","product":"Tee"},{"id":8,"category":"Heritage Language & Code-Switch Humor","title":"Persian Farewell Protocol Tee","palette":["#2A9D8F","#C9483B","#2B2B2B","#FFFFFF"],"description":"Numbered list tee: 'Step 1: Say goodbye. Step 2: Walk to the door. Step 3: Keep talking. Step 4: Open the door. Step 5: Still talking. Step 6: Sit back down.' Everybody knows this.","product":"Tee"},{"id":9,"category":"Heritage Language & Code-Switch Humor","title":"Joonam / My Soul / My Whole World / My Reason for Existing Tee","palette":["#2A9D8F","#C9483B","#2B2B2B","#FFFFFF"],"description":"Side-by-side translation card style: 'Joonam' on the left, and stacked on the right a tower of escalating English equivalents — showing how much weight one Farsi word carries.","product":"Tee"},{"id":10,"category":"Evil Eye & Protective Symbols","title":"Certified Esfand Burner Tee","palette":["#1E3A8A","#FFFFFF","#3B82F6","#D4A017"],"description":"Retro certification badge: 'Certified Esfand Burner — Licensed to Ward Off the Evil Eye Since Birth.' Plays on the ritual as a professional credential.","product":"Tee"},{"id":11,"category":"Evil Eye & Protective Symbols","title":"Daily Protection Stack Tee","palette":["#1E3A8A","#FFFFFF","#3B82F6","#D4A017"],"description":"Illustrated 'morning routine' graphic: Nazar bead ☑  Esfand smoke ☑  Call mom ☑ — three layers of spiritual insurance rendered as a checklist badge.","product":"Tee"},{"id":12,"category":"Diaspora Generational & Parent Humor","title":"Persian Mom Volume Dial Tee","palette":["#2A9D8F","#C9483B","#D4A017","#2B2B2B"],"description":"Retro dial graphic with settings: 'Off / Normal / Excited / At a Wedding / When She Finds Out.' The dial is cranked to the last setting.","product":"Tee"},{"id":13,"category":"Diaspora Generational & Parent Humor","title":"Being Thin Is Not a Personality. Eat. Tee","palette":["#2A9D8F","#C9483B","#D4A017","#2B2B2B"],"description":"Direct expansion of the 'Eat Something, You're Skinny' idea — the full Persian-parent thought, delivered in bold sans-serif.","product":"Tee"},{"id":14,"category":"Diaspora Generational & Parent Humor","title":"First Generation, Second Everything Else Tee","palette":["#2A9D8F","#C9483B","#D4A017","#2B2B2B"],"description":"Clean bold type: 'First Generation. Second-Guess Everything.' — identity statement for diaspora kids, double meaning on 'second.'","product":"Tee / Crewneck"},{"id":15,"category":"Yalda Night & Persian Poetry","title":"Hafez Said It, I'm Doing It Tee","palette":["#0F1B3D","#7A1F2B","#D4A017","#3B2A5E"],"description":"Humor tee: 'I didn't decide. Hafez did.' — illustration of someone opening the book of Hafez, pointing at a verse, with a blank 'decision made' expression. The Hafez-fal as life advice.","product":"Tee"},{"id":16,"category":"Yalda Night & Persian Poetry","title":"Yalda Night Survival Guide Tee","palette":["#0F1B3D","#7A1F2B","#D4A017","#3B2A5E"],"description":"Illustrated numbered list: '1. Bring watermelon 2. Recite one poem minimum 3. Eat everything 4. Dodge the marriage question 5. Survive until sunrise.' Yalda as family-gathering marathon.","product":"Tee"},{"id":17,"category":"Persian Rug & Pattern Motifs","title":"Rug Medallion Chest Print Tee","palette":["#B5532C","#1B3358","#D4A017","#F3E3C3"],"description":"Full-chest medallion centered on front — traditional rug-center motif adapted as a large, high-detail chest graphic. Front print only (no hem or sleeve printing).","product":"Tee"},{"id":18,"category":"Persian Rug & Pattern Motifs","title":"Qashqai Tribal Print Tee","palette":["#B5532C","#1B3358","#D4A017","#F3E3C3"],"description":"Qashqai-inspired geometric tribal motif as a large back or front print — angular, bold, high contrast. Adapted to print-on-demand front/back constraint.","product":"Tee"},{"id":19,"category":"Pomegranate & Botanical Symbolism","title":"Anar & Bidmeshk Garden Tee","palette":["#7A1F2B","#4F6B3A","#FBF6EF","#D4A017"],"description":"Persian-garden botanical duo: pomegranate branch beside a weeping willow sprig (bidmeshk) — both iconic symbols from Persian poetry and garden design.","product":"Tee / Print"},{"id":20,"category":"Pomegranate & Botanical Symbolism","title":"Yalda Split Tee","palette":["#7A1F2B","#4F6B3A","#FBF6EF","#D4A017"],"description":"Cross-section illustration: pomegranate and watermelon halves side by side, seeds visible, botanical-illustration style — the two defining fruits of Shab-e Yalda on one shirt.","product":"Tee"},{"id":21,"category":"Mehregan & Other Seasonal Holidays","title":"Zard-o Sorkh-o Zard Chaharshanbe Suri Tee","palette":["#C9772F","#7A1F2B","#6B6B3A","#F3E3C3"],"description":"'Zardiyam az to, sorkhiyat az man' — the traditional fire-jumping verse set in bold type around a bonfire illustration. The line Iranians actually say while jumping.","product":"Tee"},{"id":22,"category":"Mehregan & Other Seasonal Holidays","title":"Persian Calendar Wheel Tee","palette":["#C9772F","#7A1F2B","#6B6B3A","#F3E3C3"],"description":"Year-wheel graphic showing the five major Persian festivals in a circle: Nowruz, Sizdah Bedar, Tirgan, Mehregan, Yalda — with iconic symbol for each. A wearable cultural calendar.","product":"Tee / Tote"},{"id":23,"category":"Persian Empire & History Pride","title":"2500 Years Running Tee","palette":["#3B2A5E","#D4A017","#6E1E26","#F3E3C3"],"description":"Minimal pride statement: '2,500 Years Running' in clean type below an Achaemenid winged-sun (Faravahar) line-art. Long-form heritage pride without overt political symbols.","product":"Tee / Crewneck"},{"id":24,"category":"Vintage Spice & Tea Label Aesthetic","title":"Gole Sorkh Rosewater Co. Label Tee","palette":["#C9A227","#7A1F2B","#F3E3C3","#2F4538"],"description":"Fictional vintage label: 'Gole Sorkh Rosewater Co. — Est. Tehran' with rose-illustration and retro Persian-grocery tin typography. Uses Persian name (not the real Golestan brand).","product":"Tee / Tote"},{"id":25,"category":"Farsi Calligraphy & Typography Art","title":"Eshgh / Omid / Azadi Triptych Tee","palette":["#111111","#D4A017","#FBF6EF","#1B4B43"],"description":"Three-panel Nastaliq calligraphy across the chest: Love / Hope / Freedom (eshgh / omid / azadi) — the three words that resonate most across generations of the diaspora.","product":"Tee"}];
+
+const STORAGE_KEY = "coolchy-feedback-" + ROUND_KEY;
+let state = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+
+function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); updateProgress(); }
+
+function updateProgress(){
+  const decided = Object.values(state).filter(s => s.decision).length;
+  document.getElementById('progress').textContent = `${decided} / ${DATA.length} reviewed`;
+}
+
+function cardHTML(item){
+  const sw = item.palette.map(c => `<div class="swatch" style="background:${c}"></div>`).join('');
+  const s = state[item.id] || {};
+  return `
+  <div class="card" data-id="${item.id}" data-category="${item.category}">
+    <div class="palette">${sw}</div>
+    <div class="idnum">#${String(item.id).padStart(3,'0')}</div>
+    <div class="cat">${item.category}</div>
+    <h3 class="title">${item.title}</h3>
+    <div class="desc">${item.description}</div>
+    <div class="product">Suggested: ${item.product}</div>
+    <div class="decision-row">
+      <button class="like ${s.decision==='like'?'active':''}" data-d="like">Like</button>
+      <button class="pass ${s.decision==='pass'?'active':''}" data-d="pass">Pass</button>
+      <button class="later ${s.decision==='later'?'active':''}" data-d="later">Later</button>
+    </div>
+    <textarea placeholder="Notes (optional)...">${s.notes || ''}</textarea>
+  </div>`;
+}
+
+const grid = document.getElementById('grid');
+grid.innerHTML = DATA.map(cardHTML).join('');
+
+// category filter options
+const cats = [...new Set(DATA.map(d => d.category))];
+const catSelect = document.getElementById('categoryFilter');
+cats.forEach(c => {
+  const o = document.createElement('option'); o.value = c; o.textContent = c; catSelect.appendChild(o);
+});
+
+function refreshCardClasses(){
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const d = (state[id] || {}).decision;
+    card.classList.remove('decided-like','decided-pass','decided-later');
+    if(d) card.classList.add('decided-' + d);
+  });
+}
+refreshCardClasses();
+updateProgress();
+
+grid.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-d]');
+  if(!btn) return;
+  const card = btn.closest('.card');
+  const id = card.dataset.id;
+  const decision = btn.dataset.d;
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  refreshCardClasses();
+  card.querySelectorAll('.decision-row button').forEach(b => b.classList.remove('active'));
+  if(state[id].decision) card.querySelector(`button[data-d="${state[id].decision}"]`).classList.add('active');
+});
+
+grid.addEventListener('input', (e) => {
+  if(e.target.tagName !== 'TEXTAREA') return;
+  const card = e.target.closest('.card');
+  const id = card.dataset.id;
+  state[id] = state[id] || {};
+  state[id].notes = e.target.value;
+  save();
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  if(!confirm('Clear all decisions and notes for this round?')) return;
+  state = {};
+  save();
+  grid.innerHTML = DATA.map(cardHTML).join('');
+  refreshCardClasses();
+});
+
+function applyFilters(){
+  const q = document.getElementById('search').value.toLowerCase();
+  const cat = catSelect.value;
+  const status = document.getElementById('statusFilter').value;
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const item = DATA.find(d => d.id == id);
+    const decision = (state[id] || {}).decision || '';
+    let show = true;
+    if(q && !(item.title.toLowerCase().includes(q) || item.description.toLowerCase().includes(q))) show = false;
+    if(cat && item.category !== cat) show = false;
+    if(status === 'undecided' && decision) show = false;
+    if(status && status !== 'undecided' && decision !== status) show = false;
+    card.classList.toggle('hidden', !show);
+  });
+}
+document.getElementById('search').addEventListener('input', applyFilters);
+catSelect.addEventListener('change', applyFilters);
+document.getElementById('statusFilter').addEventListener('change', applyFilters);
+
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const out = DATA.map(item => ({
+    id: item.id,
+    title: item.title,
+    category: item.category,
+    decision: (state[item.id] || {}).decision || null,
+    notes: (state[item.id] || {}).notes || ""
+  }));
+  const blob = new Blob([JSON.stringify({round: ROUND_KEY, feedback: out}, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = ROUND_KEY + '-feedback.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
