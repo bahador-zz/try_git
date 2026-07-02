@@ -1,0 +1,279 @@
+COOLCHY — ROUND 1 LIKED DESIGNS: DTG IMAGE GENERATION PROMPTS
+All prompts: portrait format (use size="1024x1536"), quality="medium"
+Append to every prompt: "White background, no drop shadows, no bleed outside design bounds, flat vector style, suitable for direct-to-garment printing on 100% cotton."
+──────────────────────────────────────────────────────────────────────────────
+
+━━━ NOWRUZ & HAFT-SIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#01 — Haft-Sin Collage Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A postcard-stamp collage grid of the seven Haft-Sin symbols, each in its own vintage stamp frame: sabzeh (sprouting wheatgrass), senjed (dried lotus berries), samanu (wheat pudding bowl), sib (red apple), sumac (spice pile), serkeh (vinegar jar), sir (garlic). Additional stamps: a hand mirror, gold coins, a swimming goldfish. Stamps arranged in a 3×3 grid with decorative serrated edges. Palette: turquoise #2A9D8F, grass green #6B8E4E, gold #D4A017, cream #FBF6EF.
+
+#02 — Nowruz Pirooz Banner Tee  [NOTE APPLIED: Nowruz Pirooz / kids theme]
+DTG print-ready flat illustration, portrait format, front chest placement. Bold bouncy hand-lettered banner reading "Nowruz Pirooz" in large friendly type sized for kids. Flanked by hand-drawn painted Persian eggs in pastel colors, a small sprouting wheatgrass dish, and a cute cartoon goldfish. Bright, joyful, birthday-party energy. Palette: turquoise #2A9D8F, grass green #6B8E4E, gold #D4A017, cream #FBF6EF. Clean black outlines, flat fills.
+
+#03 — Sabzeh Sprout Line Art Tee
+DTG print-ready single-color linocut illustration, portrait format, front chest placement. A shallow ceramic dish of densely sprouting wheatgrass (sabzeh), rendered in linocut/woodblock print style with high-contrast single-color ink. Fine parallel hatching on the grass blades, bold solid shadows on the dish. One ink color: deep teal #1B4B43 on cream or white. Minimal, elegant, botanical.
+
+#04 — Goldfish & Mirror Nowruz Icon Tee
+DTG print-ready flat illustration, portrait format, front chest placement. Two icons arranged vertically: a small round glass fishbowl with a single goldfish swimming inside, and below it an ornate hand mirror reflecting a goldfish. Both icons in a compact emblem style, suitable for a left-chest or centered small chest print. Palette: turquoise #2A9D8F, gold #D4A017, cream #FBF6EF, green #6B8E4E. Clean vector lines, flat fills.
+
+#05 — Sizdah Bedar Picnic Tee
+DTG print-ready retro poster illustration, portrait format, front chest placement. Vintage picnic-poster style: a blanket spread on grass with a sabzeh dish placed at the center (the Sizdah Bedar tradition of throwing it in water or leaving it outside). Sun overhead, simple landscape. Bold retro poster typography at top: "Sizdah Bedar" and below "Go Outside." Palette: turquoise #2A9D8F, grass green #6B8E4E, gold #D4A017, cream #FBF6EF. Flat color fills.
+
+#06 — Khune Tekouni Tee  [NOTE APPLIED: funnier, more explicit humor]
+DTG print-ready flat illustration, portrait format, front chest placement. Bold sans-serif headline: "THIS IS MY KHUNE TEKOUNI SHIRT" with Farsi "این پیراهن خانه تکانیه" below in Nastaliq script. Surrounding cartoon chaos illustrations: a broom mid-sweep, a flying dustpan, a cloud of dust particles, a rolled-up rug being hauled away. Palette: turquoise #2A9D8F, charcoal #2B2B2B, cream. Flat fills, clean edges.
+
+━━━ PERSIAN CAT & CHAYEE CULTURE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#07 — Persian Cat Drinking Chayee Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A fluffy Persian cat (long fur, flat face, regal posture) seated and holding a tulip-shaped estekan glass of amber tea with both paws, steam rising. Background: a kilim rug pattern in muted colors instead of neon city. Warm amber, cream, terracotta, and deep red palette: brown #8B5A2B, cream #F3E3C3, red #7A1F2B, gold #D4A017. Flat vector illustration, no photographic shading.
+
+#08 — Chayee Time, Every Time Tee  [NOTE APPLIED: Chayee / tulip estekan]
+DTG print-ready flat illustration, portrait format, front chest placement. Large tulip-shaped Persian estekan glass centered, filled with amber tea, steam wisps rising. Hand-lettered script "Chayee Time, Every Time" curves around the glass in a banner arc. The glass shape is distinctly the curved tulip form of traditional Persian tea service. Palette: brown #8B5A2B, cream #F3E3C3, gold #D4A017. No gradients.
+
+#09 — Estekan & Nabat Still Life Tee
+DTG print-ready vintage label illustration, portrait format, front chest placement. Still-life composition: a tulip estekan glass of tea beside a nabat (saffron rock candy) on a stick. Rendered in vintage apothecary product-label style with an ornamental border frame. Fine illustration line work, flat color fills. Palette: brown #8B5A2B, cream #F3E3C3, gold #D4A017, red #7A1F2B.
+
+#10 — Samovar Morning Tee  [NOTE APPLIED: morning not sunset]
+DTG print-ready retro travel-poster illustration, portrait format, front chest placement. A classic ornate samovar on a windowsill at early morning: soft golden sunrise light coming through a simple window frame behind it, steam curling up from the spout. Below: "MORNING RITUAL" in small vintage sans-serif. Palette: amber #8B5A2B, terracotta #B5532C, cream #F3E3C3, gold #D4A017. Flat color fills, no photographic texture.
+
+#11 — Too Much Chayee Club Crest Tee  [NOTE APPLIED: Chayee not Chai]
+DTG print-ready badge design, portrait format, front chest placement. Circular crest badge: outer ring reads "TOO MUCH CHAYEE CLUB" on the top arc, "EST. 1899" on the bottom arc, in bold serif lettering. Inner laurel wreath ring. Center emblem: a tulip estekan glass with steam rising. Palette: brown #8B5A2B, gold #D4A017, cream #F3E3C3, red #7A1F2B. Distressed vintage badge texture, flat vector.
+
+#12 — Cat on a Persian Rug Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A cat curled up and sleeping on a richly patterned Persian kilim rug, the rug's geometric motifs visible beneath the cat. The rug pattern replaces the trending "neon city backdrop" — this is a home setting. Palette: terracotta #B5532C, navy #1B3358, gold #D4A017, cream #F3E3C3. Flat vector, no photographic shading.
+
+#15 — Chayee Addict Society Badge Tee  [NOTE APPLIED: Chayee / Est. 1899]
+DTG print-ready circular badge, portrait format, front chest placement. Circular badge design: "CHAYEE ADDICT SOCIETY" on outer ring, "EST. 1899" below center. Center: a large tulip estekan emblem. Inner decorative ring. Palette: brown #8B5A2B, gold #D4A017, cream #F3E3C3. Clean vintage badge with slight distress texture.
+
+#16 — Nabat Sugar Rock Doodle Tee
+DTG print-ready hand-drawn illustration, portrait format, front chest placement. A loose, playful hand-drawn illustration of nabat (saffron rock candy) — large crystalline chunks of amber sugar on a stick. Several pieces arranged in a casual scattered composition. Fine linework, pastel flat fills in amber and gold tones. Palette: gold #D4A017, amber #C9A227, cream #F3E3C3, brown #8B5A2B.
+
+━━━ HERITAGE LANGUAGE & CODE-SWITCH HUMOR ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#17 — Joonam Bubble Tee
+DTG print-ready flat graphic, portrait format, front chest placement. The Farsi word "جانم" (Joonam) in large bold bubble lettering, centered. Below: phonetic spelling "joo-nam" and a one-line translation "My soul / My dear" in small clean sans-serif. Palette: turquoise #2A9D8F, red #C9483B, black #2B2B2B. Bold, punchy, graphic.
+
+#18 — Azizam Heart Tee
+DTG print-ready flat graphic, portrait format, front chest placement. The Farsi word "عزیزم" (Azizam) lettered inside a bold heart outline — the text fills the heart shape. Below in small sans-serif: "Azizam — My dear" in English. Two-tone print. Palette: turquoise #2A9D8F, red #C9483B on white. Clean, minimal, affectionate.
+
+#19 — Befarmaeed 47 Times Tee
+DTG print-ready typographic design, portrait format, front chest placement. Tally marks in groups of five filling the chest area: 47 total tally marks, stamped like a prison count. Below: "Times I said Befarmaeed today." In small text: "And counting." Palette: turquoise #2A9D8F, charcoal #2B2B2B. Deadpan humor, stamped typewriter aesthetic.
+
+#20 — Tarof Champion Tee
+DTG print-ready crest badge design, portrait format, front chest placement. Sports-medal-style circular crest: "TAROF CHAMPION" on top arc, "WORLD RECORD HOLDER" on bottom arc. Center emblem: two hands gesturing in the formal "please, after you" offer position. Laurel wreath border. Palette: turquoise #2A9D8F, gold #D4A017, charcoal #2B2B2B. Flat vector.
+
+#21 — Ghorboonet Beram Tee
+DTG print-ready typographic design, portrait format, front chest placement. Large elegant Farsi script "قربونت برم" (Ghorboonet Beram) centered. Below: phonetic "ghor-boo-net-be-ram" then English translation in two lines: "May I be sacrificed for you / (It means: I love you, extremely.)". Soft script type. Palette: turquoise #2A9D8F, charcoal #2B2B2B. White background.
+
+#22 — Chashm, Chashm, Chashm Tee
+DTG print-ready typographic design, portrait format, front chest placement. The word "Chashm" stacked three times in progressively larger bold type, like a volume escalation — small / medium / large. Each iteration slightly more emphatic. Below: "Yes. Of course. Absolutely." in parentheses. Palette: turquoise #2A9D8F, red #C9483B. Bold, deadpan.
+
+#24 — Khaleh Code-Switch Tee  [NOTE APPLIED: aunt/uncle translation humor]
+DTG print-ready infographic design, portrait format, front chest placement. Two columns. Left column header: "Persian" — list of specific relational titles: Khaleh (mom's sister), Amu (dad's brother), Daei (mom's brother), Amme (dad's sister), Khaleh zadeh, Ammeh zadeh, Daei zadeh, Amu zadeh. Right column header: "English" — all eight lines point to the same two words: "Aunt" or "Uncle." The absurdity of the collapse is the joke. Palette: turquoise #2A9D8F, red #C9483B, black #2B2B2B.
+
+#25 — My Mom Speaks Farsi When She's Mad Tee
+DTG print-ready bold typographic design, portrait format, front chest placement. Large centered sans-serif: "MY MOM SPEAKS FARSI WHEN SHE'S MAD." Below in smaller italics: "(which is always)." Optional: tiny flame emoji-style icon. Palette: turquoise #2A9D8F, charcoal #2B2B2B. Clean, relatable, punchy.
+
+#26 — Merci, Khoda Hafez Tee
+DTG print-ready typographic design, portrait format, front chest placement. Two large words stacked: "MERCI" on top (the French loanword Iranians use), "KHODA HAFEZ" below. Each word in a different type treatment highlighting the code-switch: "MERCI" in a French-style serif, "KHODA HAFEZ" in a Persian-style rounded sans. Below: "Bilingual since birth." Palette: turquoise #2A9D8F, red #C9483B, black #2B2B2B.
+
+━━━ EVIL EYE & PROTECTIVE SYMBOLS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#27 — Nazar Embroidered Icon Tee
+DTG print-ready embroidery-style illustration, portrait format, left-chest small icon placement (or centered). A single nazar bead (concentric circles: dark blue outer, white ring, light blue ring, black pupil center) rendered to look like embroidery stitching — satin stitch texture simulation. Small and precise. Palette: cobalt blue #1E3A8A, white #FFFFFF, sky blue #3B82F6, gold #D4A017.
+
+#28 — Cheshm Zakhm Protection Tee
+DTG print-ready bold graphic, portrait format, front chest placement. Large centered nazar eye illustration — stylized, graphic, bold. The eye is the dominant image. Surrounding it: Farsi script "چشم زخم نخوری" (cheshm zakhm nakhori) as a circular text ring. Palette: cobalt blue #1E3A8A, white #FFFFFF, sky blue #3B82F6, gold #D4A017. High-contrast flat vector.
+
+#29 — Esfand Smoke Swirl Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A small metal brazier/pan with glowing esfand (rue seeds), smoke rising in an elaborate decorative swirl that takes up the upper chest area. The smoke forms organic curling patterns. At the base: the nazar eye motif. Palette: navy #1E3A8A, gold #D4A017, white #FFFFFF. Flat vector, no photographic texture.
+
+#30 — Blue Eye Grid Pattern Tee
+DTG print-ready pattern design, portrait format, front chest placement. A 4×5 grid of nazar bead icons in repeating rows, all identical and evenly spaced — like a tile pattern adapted for a chest-print panel (not all-over). Each bead: concentric circle in navy, white, sky blue, black. Palette: cobalt blue #1E3A8A, white #FFFFFF, sky blue #3B82F6. Flat vector, high contrast.
+
+#31 — Nazar Necklace Line Art Tee
+DTG print-ready single continuous-line illustration, portrait format, front chest placement. A nazar bead charm hanging on a delicate chain, drawn in a single unbroken line — the chain, the bail, and the circular nazar all formed by one continuous stroke. Minimal and elegant. One or two colors: navy #1E3A8A with gold #D4A017 accent for the chain. White background.
+
+#32 — Cheshm Nakhori Crest Tee
+DTG print-ready crest badge design, portrait format, front chest placement. Circular crest badge: "CHESHM NAKHORI" on top arc, "Since 1 Day Old" on bottom arc. Center: a nazar bead emblem. Laurel or leaf wreath border. Palette: cobalt blue #1E3A8A, gold #D4A017, white #FFFFFF. Clean vintage badge style.
+
+━━━ VINTAGE SPICE & TEA LABEL AESTHETIC ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#34 — Saffron Threads Vintage Label Tee
+DTG print-ready vintage label illustration, portrait format, front chest placement. Apothecary/spice-tin label design: rectangular label with ornamental border. Header: "SAFFRON THREADS." Center illustration: delicate saffron crocus flowers with the three crimson stigmas (the saffron threads) visible. Footer: "Pure · Hand-Picked · Persian." Palette: saffron gold #C9A227, deep red #7A1F2B, cream #F3E3C3, forest green #2F4538.
+
+#35 — Rosewater & Sugar Label Tee
+DTG print-ready vintage label illustration, portrait format, front chest placement. Retro product-label design: ornamental frame border. Header: "ROSEWATER & SUGAR." Center illustration: a glass rosewater bottle with a rose in bloom beside it, sugar crystals scattered. Footer: "Golab — Distilled with Care." Palette: saffron gold #C9A227, deep red #7A1F2B, cream #F3E3C3, forest green #2F4538.
+
+#37 — Sour Cherry (Albaloo) Crate Label Tee
+DTG print-ready vintage fruit-crate label illustration, portrait format, front chest placement. Classic American/Persian fruit-crate label style: bold header "ALBALOO" with phonetic "Sour Cherry" below. Center: a cluster of sour cherries on a branch with leaves. Decorative border with woodcut-style ornaments. Palette: saffron gold #C9A227, deep red #7A1F2B, cream #F3E3C3, forest green #2F4538.
+
+#40 — Torsh-o-Shirin Candy Wrapper Tee
+DTG print-ready vintage candy-wrapper illustration, portrait format, front chest placement. Retro candy bar wrapper design: bold wavy text "TORSH-O-SHIRIN" (sour-sweet) across the top. Center: cartoon illustration of hard candy pieces, some sour green, some sweet red. Playful retro typography. Palette: saffron gold #C9A227, deep red #7A1F2B, cream #F3E3C3, forest green #2F4538.
+
+━━━ DIASPORA GENERATIONAL & PARENT HUMOR ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#41 — Persian Mom Hotline Tee
+DTG print-ready retro badge design, portrait format, front chest placement. Circular retro "hotline" badge: "PERSIAN MOM HOTLINE" around the top arc, "Available 24/7 / For Unsolicited Advice" on the bottom. Center: a vintage rotary phone icon. Palette: turquoise #2A9D8F, red #C9483B, gold #D4A017, black #2B2B2B. Vintage badge flat vector.
+
+#42 — Eat Something, You're Skinny Tee
+DTG print-ready bold typographic design, portrait format, front chest placement. Large bold sans-serif centered: "EAT SOMETHING." Below, smaller: "You're looking skinny." Below that in parentheses: "(This is a compliment. Act accordingly.)" Optional tiny plate-of-food icon as footer. Palette: turquoise #2A9D8F, charcoal #2B2B2B. Deadpan.
+
+#43 — Tehrangeles Varsity Tee
+DTG print-ready varsity graphic, portrait format, front chest placement. Classic varsity arc lockup: "TEHRANGELES" in bold varsity arc lettering across the top. Below: "PERSIAN CAPITAL OF THE WEST" in smaller block caps. Optional small icon: a palm tree and a mountain. Palette: turquoise #2A9D8F, red #C9483B, gold #D4A017, black #2B2B2B. Flat vector.
+
+#44 — Cousin Counted As Sibling Tee
+DTG print-ready typographic design, portrait format, front chest placement. Centered bold text: "MY COUSIN IS MY SIBLING." Below: "(We don't make that distinction.)" Small family-tree icon where "cousin" and "sibling" share the same node. Palette: turquoise #2A9D8F, red #C9483B, charcoal #2B2B2B. Clean, punchy.
+
+#45 — Persian Parents Don't Knock Club Tee
+DTG print-ready club crest design, portrait format, front chest placement. Club crest: "PERSIAN PARENTS DON'T KNOCK CLUB" around the outer ring. Center: a door swinging wide open illustration. Bottom arc: "Founding Members: Everyone's Parents." Palette: turquoise #2A9D8F, red #C9483B, gold #D4A017. Flat vector badge.
+
+#46 — I Survived Nowruz Cleaning Tee
+DTG print-ready survivor-badge design, portrait format, front chest placement. Distressed survivor-certificate badge: "I SURVIVED" in bold block caps at top. Below: "NOWRUZ CLEANING" in large display type. Small Farsi script "خانه تکانی" beneath. Footer: "Annual Extreme Sport — Est. Forever." Palette: turquoise #2A9D8F, red #C9483B, gold #D4A017. Worn badge aesthetic.
+
+#47 — Befarmaeed Olympics Gold Medalist Tee
+DTG print-ready sports parody design, portrait format, front chest placement. Olympic gold medal illustration (circular medal on a ribbon) with the inscription: "GOLD — Befarmaeed World Championships" and "Personal Best: 47 Offers." Below the medal: "Please. No, after you. I insist. No no, you first." Palette: turquoise #2A9D8F, gold #D4A017, red #C9483B, charcoal #2B2B2B. Flat vector.
+
+#48 — Why Aren't You Married Yet Tee
+DTG print-ready bold typographic design, portrait format, front chest placement. Large sans-serif centered: "WHY AREN'T YOU MARRIED YET?" Below, in smaller type and a different font: "— Every Persian relative, every time." Optional small illustration: a clock with a wedding ring around it. Palette: turquoise #2A9D8F, red #C9483B, charcoal #2B2B2B.
+
+#49 — Raised by a Persian Grandma Crest Tee
+DTG print-ready heritage crest design, portrait format, front chest placement. Circular crest badge: "RAISED BY A PERSIAN GRANDMA" on the outer ring. Center: illustration of a plate of food overflowing, or a warm older woman's hands. Bottom arc: "Overfed · Overprotected · Overloved." Palette: turquoise #2A9D8F, gold #D4A017, charcoal #2B2B2B. Warm vintage badge style.
+
+━━━ FARSI CALLIGRAPHY & TYPOGRAPHY ART ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#52 — Eshgh (Love) Calligraphy Tee
+DTG print-ready calligraphy art, portrait format, front chest placement. Single Farsi word "عشق" (eshgh — love) in large, expressive Nastaliq calligraphy, gold ink, centered. Below in small clean sans-serif: "Eshgh — Love." The calligraphy is the dominant graphic element; it should be large, flowing, and beautiful. Palette: gold #D4A017 on black field, or black calligraphy on cream. Flat vector, no photographic ink effects.
+
+#53 — Azadi (Freedom) Script Tee
+DTG print-ready calligraphy art, portrait format, front chest placement. Single Farsi word "آزادی" (azadi — freedom) in large flowing Nastaliq calligraphy, centered and dominant. Below in small clean sans-serif: "Azadi — Freedom." Bold, singular, powerful. Palette: black #111111 on ivory #FBF6EF, with gold #D4A017 accent. Flat vector.
+
+#54 — Omid (Hope) Brushstroke Tee
+DTG print-ready calligraphy art, portrait format, front chest placement. Single Farsi word "امید" (omid — hope) in brush-style calligraphy with a soft visible brushstroke texture. Below in small sans-serif: "Omid — Hope." The brushstroke texture should look hand-painted but still reproduce cleanly on DTG. Palette: deep teal #1B4B43, gold #D4A017, ivory #FBF6EF.
+
+#55 — Simorgh Wordmark Tee
+DTG print-ready calligraphic wordmark, portrait format, front chest placement. The word "سیمرغ" (Simorgh — the mythical Persian phoenix) rendered as an elegant Nastaliq calligraphic wordmark. The letter forms are arranged to subtly suggest the shape of a bird or spread wings without being literal. Below: "Simorgh" in small roman type. Palette: black #111111, gold #D4A017, ivory #FBF6EF.
+
+#56 — Persian Alphabet Sampler Tee
+DTG print-ready typographic design, portrait format, front chest placement. A sampler-style grid of the 32 Persian alphabet letters (alef through ye), arranged in rows, each in elegant Nastaliq style. Header: "الفبای فارسی" (Persian Alphabet). Rendered like a vintage cross-stitch sampler or broadside print. Palette: black #111111, gold #D4A017, ivory #FBF6EF. Fine detail but each letter clear at print size.
+
+#60 — Hafez Ghazal Line Art Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A single couplet from Hafez in elegant Nastaliq calligraphy at the top (decorative, need not be legible text — ornamental calligraphic style). Below: a minimalist line-art Persian rose with stem and a few petals. Below the rose: the couplet again in small romanized transliteration. Palette: black #111111, gold #D4A017, deep red #7A1F2B, ivory #FBF6EF.
+
+━━━ PERSIAN EMPIRE & HISTORY PRIDE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#61 — Persepolis Est. 550 BC Varsity Tee
+DTG print-ready varsity graphic, portrait format, front chest placement. Classic varsity arc lockup: "PERSEPOLIS" in bold varsity arc lettering across the top. Center emblem: a simplified line-art Achaemenid column capital (the iconic bull-head capital). Bottom arc: "EST. 550 BC." Palette: deep purple #3B2A5E, gold #D4A017, cream #F3E3C3, burgundy #6E1E26. Flat vector.
+
+#62 — Cyrus Cylinder Line Art Tee
+DTG print-ready illustration, portrait format, front chest placement. Fine line-art rendering of the Cyrus Cylinder — the ancient clay barrel with cuneiform inscription, one of the first human rights documents. The cylinder shown at a slight angle, cuneiform marks visible as decorative line hatching. Below: "THE FIRST BILL OF RIGHTS — CYRUS THE GREAT, 539 BC." Palette: deep purple #3B2A5E, gold #D4A017, cream #F3E3C3.
+
+#63 — Persia, Cradle of Empires Tee
+DTG print-ready typographic heritage design, portrait format, front chest placement. Bold centered type: "PERSIA" in large display serif. Below: "CRADLE OF EMPIRES" in smaller caps. Flanked by a symmetrical laurel/leaf border or Achaemenid ornament. Below: a simple silhouette of Persepolis columns. Palette: deep purple #3B2A5E, gold #D4A017, cream #F3E3C3.
+
+#64 — Achaemenid Pattern Border Tee
+DTG print-ready pattern illustration, portrait format, front chest placement. A vertical rectangular panel of repeating Achaemenid relief-inspired motifs — stylized lotus flowers, winged sun discs, and geometric borders — adapted from the Persepolis stone carvings. Arranged as a tall centered chest panel. Palette: deep purple #3B2A5E, gold #D4A017, cream #F3E3C3. Flat vector, no photographic texture.
+
+#65 — Persepolis Relief Line Art Tee
+DTG print-ready illustration, portrait format, front chest placement. Large detailed single-line illustration adapted from the Persepolis staircase relief: a procession of robed figures bearing tribute, rendered in fine continuous line art. Fills the upper-chest area horizontally. Palette: black #111111 on cream #F3E3C3, or gold #D4A017 on deep purple #3B2A5E. Elegant historical graphic.
+
+━━━ YALDA NIGHT & PERSIAN POETRY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#67 — Yalda Night Pomegranate Tee
+DTG print-ready linocut illustration, portrait format, front chest placement. High-contrast linocut/woodblock print style: a pomegranate half (showing seeds) beside a watermelon wedge, arranged symmetrically. Bold single-color or two-color print. Below: "شب یلدا" (Shab-e Yalda) in Farsi script. Palette: deep red #7A1F2B on cream, or cream on deep red. Strong contrast, bold marks.
+
+#68 — Longest Night, Best Night Tee
+DTG print-ready typographic design, portrait format, front chest placement. Bold two-line statement: "LONGEST NIGHT." then "BEST NIGHT." Large confident sans-serif type, centered. Below in small italic: "Shab-e Yalda." Optional: a small crescent moon or pomegranate icon. Palette: midnight blue #0F1B3D, gold #D4A017, deep red #7A1F2B. Clean, bold.
+
+#69 — Hafez Fortune-Telling Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A pair of hands holding an open, well-worn book (the Divan-e Hafez), the book's pages filled with decorative Nastaliq calligraphic scribbles (ornamental, not real text). Below the book illustration: bold text "فال حافظ" (Fal-e Hafez) in Farsi, then below: "Ask. Open. Obey." Palette: midnight blue #0F1B3D, gold #D4A017, deep red #7A1F2B. Flat vector.
+
+#70 — Watermelon & Poetry Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A stylized watermelon slice (bold red, green rind, black seeds) as the dominant graphic. Below or arching over it: a line of decorative Nastaliq calligraphy as a poetry excerpt (ornamental style). Palette: deep red #7A1F2B, forest green #4F6B3A on midnight blue #0F1B3D background, or on white. Flat vector.
+
+#71 — Pomegranate Seeds Pattern Tee
+DTG print-ready pattern design, portrait format, front chest placement. An allover repeating pattern of individual pomegranate seeds — each seed a small jewel-like tear-drop shape — scattered densely across the chest print area. Mix of whole seeds and small clusters. Palette: deep red #7A1F2B, gold #D4A017 on midnight blue #0F1B3D or cream. Dense, jewel-like pattern. Front panel print only.
+
+#72 — Shab-e Yalda Crest Tee
+DTG print-ready crest badge design, portrait format, front chest placement. Circular crest badge: "SHAB-E YALDA" on the top arc, "Winter Solstice — Every Year Since Forever" on the bottom arc. Center emblem: a pomegranate half with seeds visible, flanked by a candle on each side. Palette: midnight blue #0F1B3D, deep red #7A1F2B, gold #D4A017. Flat vector.
+
+#74 — Grandma's Yalda Spread Tee
+DTG print-ready flat illustration, portrait format, front chest placement. Bird's-eye-view illustration of a traditional Yalda night spread — a large tray or sofreh seen from above, covered with: pomegranate, watermelon, ajil (mixed nuts and dried fruits), a candle, an open book of Hafez. Arranged in a circular wreath-like composition. Palette: deep red #7A1F2B, gold #D4A017, midnight blue #0F1B3D, cream. Flat vector.
+
+━━━ PERSIAN RUG & PATTERN MOTIFS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[NOTE on all rug designs: front or back print only — no sleeve or hem printing]
+
+#75 — Kilim Border Pattern Tee
+DTG print-ready flat vector illustration, portrait format, front chest placement. A kilim geometric border pattern formatted as a vertical centered chest panel — NOT wrapping to hem or sleeves. The panel is tall and narrow, filled with repeating angular kilim motifs (stepped diamonds, zigzag rows). Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. High-contrast flat vector, front print only.
+
+#76 — Persian Rug Medallion Tee
+DTG print-ready flat vector illustration, portrait format, front chest placement. Large Persian carpet medallion centered on the chest — traditional medallion radiating geometric and floral motifs from a central point, inspired by Isfahan or Tabriz carpet design. Fills a large centered chest print area (not all-over). Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. Flat color fills, crisp edges, DTG-ready.
+
+#77 — Boteh (Paisley) Repeat Tee
+DTG print-ready flat vector pattern, portrait format, front chest placement. Classic Persian boteh (paisley) motif repeated in a regular grid pattern, sized to fill a front chest print panel — not all-over. The boteh shapes are the traditional teardrop with a curved tip. Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. Flat vector, crisp edges.
+
+#78 — Tabriz Rug Detail Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A close-up detail crop of a Tabriz-style Persian rug — the ornate curvilinear floral arabesque that fills the field of these rugs — adapted as a centered chest print panel. Intricate but adapted to 3-4 flat print colors. Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. Flat vector.
+
+#79 — Woven Pattern Crewneck
+DTG print-ready flat pattern illustration, portrait format, front chest placement. A Persian rug-weave geometric pattern — the kind seen in kilim or Qashqai work — adapted as a centered rectangular chest/torso print panel. Bold, graphic, angular. Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. High contrast, flat fills.
+
+#80 — Rug Medallion Embroidered Icon Tee
+DTG print-ready embroidery-style illustration, portrait format, small left-chest icon placement. A single small Persian rug medallion icon (circular, geometric, detailed) rendered to simulate embroidery stitching — satin stitch texture in flat color. Small and precise, badge-sized. Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017. Flat vector simulation of embroidery.
+
+#81 — Geometric Kilim Color-Block Tee
+DTG print-ready flat vector design, portrait format, front chest placement. Bold color-blocked geometric design inspired by kilim weaving: large rectangular panels in alternating colors, with angular tribal motifs at the borders between blocks. Simple, graphic, high-contrast. Palette: terracotta #B5532C, deep navy #1B3358, gold #D4A017, cream #F3E3C3. Three to four colors max, flat fills.
+
+#82 — Qashqai Pattern Line Art Tee
+DTG print-ready flat vector illustration, portrait format, front chest placement. Qashqai tribal pattern adapted as a centered chest print: angular diamond grids, stepped lozenge shapes, small animal motifs (stylized birds or horses) typical of Qashqai work, arranged in a vertical panel. Palette: terracotta #B5532C, deep navy #1B3358, cream #F3E3C3. Two-to-three color, bold graphic.
+
+━━━ POMEGRANATE & BOTANICAL SYMBOLISM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#83 — Anar (Pomegranate) Linocut Tee
+DTG print-ready linocut/woodblock print illustration, portrait format, front chest placement. A whole pomegranate beside a halved pomegranate showing its crown of seeds, rendered in high-contrast single-color linocut style — bold marks, strong shadows, no fine gradients. Below: "آناردار" or simply "Anar" in Farsi script. Single ink color: deep red #7A1F2B on cream, or vice versa.
+
+#84 — Pomegranate Branch Botanical Tee
+DTG print-ready botanical illustration, portrait format, front chest placement. Vintage botanical-print style: a pomegranate branch with one whole fruit, one blossom, and detailed leaves — the kind of illustration found in 19th-century botanical encyclopedias. Fine linework, flat color fills. Palette: deep red #7A1F2B, forest green #4F6B3A, cream #FBF6EF, gold #D4A017.
+
+#85 — Split Pomegranate Still Life Tee
+DTG print-ready botanical still-life illustration, portrait format, front chest placement. A pomegranate split in half, shown face-on so the ruby seeds fill the frame in a jewel-like cross-section. Rendered in vintage botanical style: fine outlines, flat colors. The interior should look jewel-like and rich. Palette: deep red #7A1F2B, gold #D4A017, cream #FBF6EF, green #4F6B3A.
+
+#86 — Saffron Crocus Botanical Tee
+DTG print-ready botanical illustration, portrait format, front chest placement. Detailed vintage botanical study of the saffron crocus (Crocus sativus): the purple flower shown in bloom with the three deep-red stigmas (saffron threads) prominently visible, with bulb and narrow leaves. Fine-line botanical illustration style, flat color fills. Palette: deep purple/lavender for petals, deep red #7A1F2B for stigmas, forest green #4F6B3A, cream #FBF6EF.
+
+#87 — Persian Rosebud Line Art Tee
+DTG print-ready single continuous-line illustration, portrait format, front chest placement. A rosebud with one or two leaves and a curved stem, drawn as a single unbroken continuous line — the whole form traced in one fluid stroke. Minimal, elegant. One color: deep red #7A1F2B or gold #D4A017 on white. The continuous line should be graceful and confident.
+
+#88 — Cypress Tree Silhouette Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A tall narrow Persian cypress tree (the distinctive columnar shape: Cupressus sempervirens) as a clean solid silhouette — centered, vertical, and naturally portrait-format. Below: a single line of Hafez verse in small Nastaliq script (decorative). Palette: deep teal #1B4B43 or black on cream. Minimal and elegant.
+
+━━━ PERSIAN WEDDING & FAMILY MILESTONES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#93 — Aroosi Dance Floor Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A festive illustrated Persian wedding dance-floor scene: silhouetted figures dancing with their arms raised, hands clapping, shown in a celebratory cluster. Above: "AROOSI" in bold display type. Below: "جشن عروسی." The mood is joyful and energetic. Palette: wedding pink #E3B4B0, gold #D4A017, cream #FBF6EF, sage #9CAF88. Flat vector silhouettes.
+
+━━━ MEHREGAN & OTHER SEASONAL HOLIDAYS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#95 — Mehregan Harvest Tee
+DTG print-ready flat illustration, portrait format, front chest placement. Autumn harvest scene celebrating Mehregan (the Persian festival of thanks in mid-autumn): a spread of autumn fruits — pomegranate, quince, apple — arranged with dried flowers and leaves. Bold retro-poster aesthetic. Header: "مهرگان" (Mehregan). Palette: amber #C9772F, deep red #7A1F2B, olive #6B6B3A, cream #F3E3C3.
+
+#96 — Chaharshanbe Suri Bonfire Tee
+DTG print-ready flat illustration, portrait format, front chest placement. A leaping figure silhouette jumping over a stylized bonfire — the classic Chaharshanbe Suri fire-jump. The fire is rendered in bold abstract flame shapes (not photorealistic). Above the jump: "چهارشنبه سوری" in Farsi. Below: "Jump and leave your sorrows behind." Palette: amber #C9772F, deep red #7A1F2B, olive #6B6B3A. High contrast, flat vector.
+
+#97 — Tirgan Water Festival Tee
+DTG print-ready flat illustration, portrait format, front chest placement. Joyful scene of the Tirgan summer water festival: figures throwing water on each other — shown as dynamic splash shapes and outstretched arms. Bold graphic style. Header: "تیرگان" (Tirgan). Below: "Mid-Summer Water Festival." Palette: deep teal/turquoise #2A9D8F, amber #C9772F, cream #F3E3C3. Flat vector, energetic.
+
+#98 — Sepandarmazgan Tee
+DTG print-ready botanical illustration, portrait format, front chest placement. Persian Valentine's Day (Sepandarmazgan, 29 Bahman) themed design: a heart formed by two intertwined botanical branches — pomegranate and rose — growing together into a heart shape. Inside the heart: "سپندارمذگان" in Farsi script. Palette: deep red #7A1F2B, forest green #4F6B3A, gold #D4A017. Fine botanical line work.
+
+#99 — Bonfire Jump Line Art Tee
+DTG print-ready single continuous-line illustration, portrait format, front chest placement. A single person in mid-jump over a bonfire, drawn as one continuous flowing line — the arc of the body, the leap, and the fire all traced in a single unbroken stroke. Bold and graphic. Single color: deep red #7A1F2B or amber #C9772F on white. The line should be fluid and energetic.
+
+#100 — Esfand Smoke Ritual Seasonal Tee
+DTG print-ready flat illustration, portrait format, front chest placement. An illustrated esfand-burning scene: a small metal pan over a flame, rue seeds inside releasing smoke that curls upward in an elaborate decorative swirl. The smoke fills the upper portion of the design. Around the scene: small illustrated protective charm motifs (nazar bead, hand of Fatima). Palette: amber #C9772F, deep red #7A1F2B, olive #6B6B3A, cream #F3E3C3. Flat vector.
+
+──────────────────────────────────────────────────────────────────────────────
+TOTAL: 81 prompts — all liked designs from Round 1
+Round 2 (25 refined concepts) prompts are in a separate file.
+──────────────────────────────────────────────────────────────────────────────
